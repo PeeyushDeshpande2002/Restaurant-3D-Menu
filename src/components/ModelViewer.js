@@ -5,7 +5,9 @@ import { OrbitControls, useGLTF } from '@react-three/drei';
 
 const ModelViewer = ({ modelPath }) => {
   return (
-    <Canvas style={{ height: 400, width: '100%' }}>
+    <Canvas style={{ height: 400, width: '100%' }}
+    camera={{ position: [7,45,0], fov: 45 }} // Adjust camera position and field of view (fov)
+>
       <ambientLight intensity={0.5} />
       <directionalLight position={[0, 10, 5]} />
       <Suspense>
