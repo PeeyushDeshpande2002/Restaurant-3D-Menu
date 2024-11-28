@@ -2,6 +2,7 @@
 import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
+import Model from './Model';
 
 const ModelViewer = ({ modelPath }) => {
   return (
@@ -18,9 +19,6 @@ const ModelViewer = ({ modelPath }) => {
   );
 };
 
-const Model = ({ modelPath }) => {
-  const { scene } = useGLTF(modelPath);
-  return <primitive object={scene} scale={2} />;
-};
+
 
 export default ModelViewer;
