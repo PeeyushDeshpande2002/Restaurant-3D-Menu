@@ -6,7 +6,7 @@ import { Box, Button } from "@mui/material";
 
 const ModelViewer = ({ modelPath }) => {
   const handleOpenInAR = () => {
-    window.location.href = `/ar.html?model=${encodeURIComponent(modelPath)}`;
+    window.location.href = `/ar.html?model=${modelPath}`;
   };
 
   return (

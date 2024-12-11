@@ -4,8 +4,8 @@ import { Card, CardContent, CardMedia, Typography, IconButton, Box } from '@mui/
 // import { ArrowBack, ArrowForward } from '@mui/icons-material';
 
 const menuItems = [
-  { id: 1, name: 'Shira', calories: '480gm', price: '₹80', image: '/images/Shira.jpg', modelPath: '/models/Shira.glb' },
-  { id: 2, name: 'Uthappa', calories: '400gm', price: '₹90', image: '/images/Uthappa.jpg', modelPath: '/models/Uttappa.glb' },
+  { id: 1, name: 'Shira', calories: '480gm', price: '₹80', image: '/images/Shira.jpg', modelPath: '/models/Shira.glb', gltfModel : ''},
+  { id: 2, name: 'Uthappa', calories: '400gm', price: '₹90', image: '/images/Uthappa.jpg', modelPath: '/models/Uttappa.glb', gltfModel : ''  },
   ];
 
   const MenuSlider = ({ onSelectItem }) => {
