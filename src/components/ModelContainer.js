@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import MenuSlider from './MenuSlider';
 import ModelViewer from './ModelViewer';
 import { AppBar, Toolbar, Typography, Container, Box } from '@mui/material';
-import XRModelViewer from './XR/XRModelViewer';
 
 const ModelContainer = () => {
   const [selectedItem, setSelectedItem] = useState(null);
@@ -33,7 +32,7 @@ const ModelContainer = () => {
               <Typography variant="h5" align="center" gutterBottom>
                 {selectedItem.name}
               </Typography>
-              <XRModelViewer modelPath={selectedItem.modelPath} />
+              <ModelViewer modelPath={selectedItem.modelPath} />
             </>
           ) : (
             <Typography variant="h6" align="center" color="textSecondary">

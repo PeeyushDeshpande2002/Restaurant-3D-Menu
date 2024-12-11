@@ -1,9 +1,7 @@
 // src/App.js
 import ModelContainer  from './components/ModelContainer';
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import ModelViewer from './components/ModelViewer';
-
 
 function App() {
   return(
